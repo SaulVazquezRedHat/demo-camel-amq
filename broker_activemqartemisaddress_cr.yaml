@@ -1,0 +1,9 @@
+apiVersion: broker.amq.io/v1beta1
+kind: ActiveMQArtemisAddress
+metadata:
+  name: orders
+  namespace: demo-camel
+spec:
+  addressName: orders
+  queueName: orders
+  routingType: anycast
